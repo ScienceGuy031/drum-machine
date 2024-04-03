@@ -35,3 +35,12 @@
 .toggled {
   background-color: green;
 }
+
+.triggered {
+  animation: myAnimation .15s;
+}
+
+@keyframes myAnimation {
+  from {background-color: blue;}
+  to {background-color: rbg(108, 117, 125);}
+}

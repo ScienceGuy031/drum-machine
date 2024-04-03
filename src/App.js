@@ -7,7 +7,6 @@ class App extends React.Component {
     this.state = {
       volume: 10,
       clip: "",
-      pressed: "",
     };
     this.handleVolumeChange = this.handleVolumeChange.bind(this);
     this.handleKeypress = this.handleKeypress.bind(this);
@@ -32,9 +31,12 @@ class App extends React.Component {
     audio.volume = this.state.volume / 100;
     audio.play();
     this.setState({
-      pressed: key,
       clip: audio.parentElement.id,
     });
+    audio.parentElement.classList.add('triggered');
+    audio.parentElement.classList.remove('triggered');
+    void audio.parentElement.offsetWidth;
+    audio.parentElement.classList.add('triggered');
   }
 
   render() {
