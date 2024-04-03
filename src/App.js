@@ -29,6 +29,7 @@ class App extends React.Component {
   handleKeypress(key) {
     const audio = document.getElementById(key);
     audio.volume = this.state.volume / 100;
+    audio.currentTime = 0;
     audio.play();
     this.setState({
       clip: audio.parentElement.id,
