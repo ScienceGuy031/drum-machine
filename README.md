@@ -1,4 +1,4 @@
-# FreeCodeCamp Challenge "Markdown-Previewer"
+# FreeCodeCamp Challenge "Drum-Machine"
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app).  
 Deployment to GitHub Pages was configured with [Deploying a React App to GitHub Pages](https://github.com/gitname/react-gh-pages).  
